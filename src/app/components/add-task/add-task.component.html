@@ -1,0 +1,32 @@
+<form *ngIf="toggleAddTask" (ngSubmit)="submitForm()">
+    <div class="form-control">
+    <label for="text">Task</label>
+    <input 
+        type="text"
+        name="text"
+        [(ngModel)] = "text"
+        id = "text"
+        placeholder="Enter the Task"
+    />
+</div>
+<div class="form-control">
+    <label for="text">day</label>
+    <input 
+        type="text"
+        name="day"
+        [(ngModel)] = "day"
+        id = "day"
+        placeholder="Enter the day"
+    />
+</div>
+<div class="form-control form-control-check">
+    <label for="text">Reminder</label>
+    <input 
+        type="checkbox"
+        name="reminder"
+        [(ngModel)] = "reminder"
+        id = "reminder"
+    />
+</div>
+<input type="submit" value="Save Task" class="btn btn-block"/>
+</form>
